@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PropertyMaster.master" AutoEventWireup="true" CodeBehind="P-Stonebriar.aspx.cs" Inherits="BradysProperties.PropertyListings.OKCProperties.Stonebriar" %>
+<%@ MasterType VirtualPath="~/PropertyMaster.master" %>

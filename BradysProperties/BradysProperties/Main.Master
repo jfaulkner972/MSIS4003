@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="BradysProperties.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="Main.css" rel="stylesheet" />
+    <link href="PropertyStyle.css" rel="stylesheet" />
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="navScroller.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <main>
+            <header></header>
+            <div class="navigation">
+                <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-darky">
+                    <a href="Home.aspx" class="logo1">
+                        <img src="img/logo2.png" alt="logo" class="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarsExample06">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Home.aspx">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oklahoma City</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown06">
+                                    <a class="dropdown-item" href="P-BradyPlaza.aspx">Brady Plaza</a>
+                                    <a class="dropdown-item" href="P-CollonadeShoppingCenter.aspx">Collonade Shopping Center</a>
+                                    <a class="dropdown-item" href="P-GhaniabadiBusinessPark.aspx">Ghaniabadi Business Park</a>
+                                    <a class="dropdown-item" href="P-I-240Center.aspx">I-240 Center</a>
+                                    <a class="dropdown-item" href="P-PennCrossing.aspx">Penn Crossing</a>
+                                    <a class="dropdown-item" href="P-SantaFePlaza.aspx">Santa Fe Plaza</a>
+                                    <a class="dropdown-item" href="P-Stonebriar.aspx">Stonebriar</a>
+                                    <a class="dropdown-item" href="P-TownAndCountry.aspx">Town & Country</a>
+                                    <a class="dropdown-item" href="P-VirtualOfficesWestminster.aspx">Virtual Offices at Westminster</a>
+                                    <a class="dropdown-item" href="P-WestRenoIndustrialPark.aspx">West Reno Industrial Park</a>
+                                    <a class="dropdown-item" href="P-WestminsterEventCenter.aspx">Westminster Event Center</a>
+                                    <a class="dropdown-item" href="P-WestminsterExecutiveSuites.aspx">Westminster Executive Suites</a>
+                                    <a class="dropdown-item" href="P-WestminsterVillage.aspx">Westminster Village</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Norman</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                                    <a class="dropdown-item" href="P-DowntownShoppingCenter.aspx">Downtown Shopping Center</a>
+                                    <a class="dropdown-item" href="P-MasonPlaza.aspx">Mason Plaza</a>
+                                    <a class="dropdown-item" href="P-RobinsonCrossing.aspx">Robinson Crossing</a>
+                                    <a class="dropdown-item" href="P-RobinsonCrossingOfficeSuites.aspx">Robinson Crossing Office Suites</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Edmond</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                                    <a class="dropdown-item" href="P-EdmondCenter.aspx">Edmond Center</a>
+                                    <a class="dropdown-item" href="P-UniversityPlaza.aspx">University Plaza</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Midwest City</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                                    <a class="dropdown-item" href="P-DeckerCenter.aspx">Decker Center</a>
+                                    <a class="dropdown-item" href="P-OrchardPlaza.aspx">Orchard Plaza</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="P-ShawneeMarketPlace.aspx">Shawnee</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Contact Us.aspx">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <br />
+            <br />
+            <div class="centerText">
+                <asp:Label ID="pageHeader" runat="server" Text="Label"></asp:Label>
+                <br />
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div id="footer" class=" form-row bg-darky">
+                <img src="img/logo2.png" alt="logo" class="logo" />
+                <h3 class="inLine ">
+                    <a href="Home.aspx" class="conor">Home</a>
+                    <a href="Contact Us.aspx" class="conor">Contact Us</a>
+                </h3>
+            </div>
+        </main>
+    </form>
+</body>
+</html>

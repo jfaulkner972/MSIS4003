@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="RegionalProperties.master.cs" Inherits="BradysProperties.RegionalProperties" %>
+<%@ MasterType VirtualPath="~/Main.Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <%--carosel--%>
+    <div id="regionalPropertyCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="regionalPropertyCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="1"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="2"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="3"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="4"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="5"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="6"></li>
+            <li data-target="regionalPropertyCarousel" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner col-12">
+            <div class=" carousel-item active">
+                <img src="img/cat.jpg" class="fullwidth" />
+                <div class="carousel-caption">
+                    <asp:Label ID="img1" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/cat2.jpg"  class="fullwidth"/>
+                <div class="carousel-caption">
+                    <asp:Label ID="img2" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/cat3.jpg" class="fullwidth"/>
+                <div class="carousel-caption">
+                    <asp:Label ID="img3" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/dog1.jpg" class="fullwidth"/>
+                <div class="carousel-caption">
+                    <asp:Label ID="img4" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/dog2.jpg" class="fullwidth"/>
+                <div class="carousel-caption">
+                    <asp:Label ID="img5" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/dog3.jpg" class="fullwidth"/>
+                <div class="carousel-caption">
+                    <asp:Label ID="img6" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Logo.PNG" class="fullwidth"/>
+                <div class="carousel-caption">
+                    <asp:Label ID="img7" runat="server" Text="Label"></asp:Label>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#regionalPropertyCarousel" data-slide="prev" role="button">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#regionalPropertyCarousel" data-slide="next" role="button">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</asp:Content>

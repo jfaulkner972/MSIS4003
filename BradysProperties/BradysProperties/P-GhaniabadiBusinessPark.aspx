@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PropertyMaster.master" AutoEventWireup="true" CodeBehind="P-GhaniabadiBusinessPark.aspx.cs" Inherits="BradysProperties.GhaniabadiBusinessPark" %>
+<%@ MasterType VirtualPath="~/PropertyMaster.master" %>

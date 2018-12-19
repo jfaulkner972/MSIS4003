@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="PropertyMaster.master.cs" Inherits="BradysProperties.PropertyMaster" %>
+
+<%@ MasterType VirtualPath="~/Main.Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="centerBox">
+        <asp:Image ID="propertyMainPic" ImageUrl="img/cat.jp" runat="server" />
+    </div>
+    <div class="centerText">
+        <asp:Label ID="propertyLocation" runat="server" Text="Label"></asp:Label>
+    </div>
+    <div>
+        <asp:Label ID="descriptionID" runat="server" Text="Label"></asp:Label>
+    </div>
+    <div id="build" class="form-row" runat="server">
+        <div id="gen" class="col-5 border centerBox" runat="server">
+            <asp:Label ID="genInfo" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:Label ID="genInfoText" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:HyperLink ID="genNav1" runat="server" NavigateUrl="~/P-WestRenoIndustrialPark.aspx">FloorPlan1</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="genNav2" runat="server" NavigateUrl="~/P-WestRenoIndustrialPark.aspx">FloorPlan2</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="genNav3" runat="server" NavigateUrl="~/P-WestRenoIndustrialPark.aspx">FloorPlan3</asp:HyperLink>
+            <br />
+        </div>
+        <div id="space" class="col-5 border centerBox " runat="server">
+            <asp:Label ID="spaceInfo" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:Label ID="spaceInfoText" runat="server" Text="Label"></asp:Label>
+        </div>
+    </div>
+    <br />
+    <div class="center">
+        <div class="form-row  col-12">
+            <div id="propertyCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="propertyCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="propertyCarousel" data-slide-to="1"></li>
+                    <li data-target="propertyCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class=" carousel-item active">
+                        <asp:Image ID="cpic1" runat="server" CssClass="tiny" />
+                    </div>
+                    <div class="carousel-item">
+                        <asp:Image ID="cpic2" runat="server" CssClass="tiny" />
+                    </div>
+                    <div class="carousel-item">
+                        <asp:Image ID="cpic3" runat="server" CssClass="tiny" />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#propertyCarousel" data-slide="prev" role="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#propertyCarousel" data-slide="next" role="button">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</asp:Content>

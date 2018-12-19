@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PropertyMaster.master" AutoEventWireup="true" CodeBehind="P-TownAndCountry.aspx.cs" Inherits="BradysProperties.PropertyListings.OKCProperties.TownAndCountry" %>
+<%@ MasterType VirtualPath="~/PropertyMaster.master" %>

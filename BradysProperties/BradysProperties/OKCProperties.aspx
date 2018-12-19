@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RegionalProperties.master" AutoEventWireup="true" CodeBehind="OKCProperties.aspx.cs" Inherits="BradysProperties.OKC_Properties" %>
+<%@ MasterType VirtualPath="~/RegionalProperties.master" %>

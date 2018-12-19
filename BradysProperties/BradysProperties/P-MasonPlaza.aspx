@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PropertyMaster.master" AutoEventWireup="true" CodeBehind="P-MasonPlaza.aspx.cs" Inherits="BradysProperties.PropertyListings.NormanProperties.MasonPlaza" %>
+<%@ MasterType VirtualPath="~/PropertyMaster.master" %>

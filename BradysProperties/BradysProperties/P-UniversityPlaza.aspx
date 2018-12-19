@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PropertyMaster.master" AutoEventWireup="true" CodeBehind="P-UniversityPlaza.aspx.cs" Inherits="BradysProperties.PropertyListings.EdmondProperties.UniversityPlaza" %>
+<%@ MasterType VirtualPath="~/PropertyMaster.master" %>

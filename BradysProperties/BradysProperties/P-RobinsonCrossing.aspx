@@ -1,0 +1,2 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PropertyMaster.master" AutoEventWireup="true" CodeBehind="P-RobinsonCrossing.aspx.cs" Inherits="BradysProperties.PropertyListings.NormanProperties.RobinsonCrossing" %>
+<%@ MasterType VirtualPath="~/PropertyMaster.master" %>

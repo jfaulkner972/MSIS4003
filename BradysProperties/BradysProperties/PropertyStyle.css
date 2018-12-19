@@ -1,0 +1,25 @@
+﻿.centerText {
+    font-size: 2em;
+    text-align: center;
+}
+
+.centerBox {
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.border {
+    border-width: 5px;
+    border-style: solid;
+    border-color: red
+}
+
+.tiny {
+    height: 500px;
+    width: 100%;
+}
+
+hide {
+    display:none;
+}

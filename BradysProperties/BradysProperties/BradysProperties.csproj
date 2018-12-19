@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02EA8AE8-3E1E-4EB0-950E-FD2BD086C86C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BradysProperties</RootNamespace>
+    <AssemblyName>BradysProperties</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.3.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.1.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.1.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.1.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.1.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.1.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact Us.aspx" />
+    <Content Include="img\brady plaza\bradyplaza11-1-400x284.jpg" />
+    <Content Include="img\brady plaza\bradyplaza11-1.jpg" />
+    <Content Include="img\brady plaza\bradyplaza31-1-400x284.jpg" />
+    <Content Include="img\brady plaza\bradyplazadrawing1-400x284.jpg" />
+    <Content Include="img\BradyPlaza.jpg" />
+    <Content Include="img\CollonadeShoppingCenter.jpg" />
+    <Content Include="img\collonade\20171215_083351-400x284.jpg" />
+    <Content Include="img\collonade\20171215_083627-400x284.jpg" />
+    <Content Include="img\collonade\20171215_083700-400x284.jpg" />
+    <Content Include="img\collonade\20171215_083800-400x284.jpg" />
+    <Content Include="img\collonade\20171215_084025-400x284.jpg" />
+    <Content Include="img\collonade\attachment-2-400x284.jpg" />
+    <Content Include="img\collonade\attachment-3-400x284.jpg" />
+    <Content Include="img\collonade\attachment-4-400x284.jpg" />
+    <Content Include="img\collonade\attachment-5-400x284.jpg" />
+    <Content Include="img\collonade\attachment-6-400x284.jpg" />
+    <Content Include="img\collonade\Collonade2-1-400x284.jpg" />
+    <Content Include="img\collonade\Collonade3-1-400x284.jpg" />
+    <Content Include="img\collonade\Collonade3-1.jpg" />
+    <Content Include="img\DeckerCenter.jpg" />
+    <Content Include="img\decker\DeckerCenter1-400x284.jpg" />
+    <Content Include="img\decker\DeckerCenter1.jpg" />
+    <Content Include="img\decker\DeckerCenter3-400x284.jpg" />
+    <Content Include="img\decker\DeckerCenterdrawing-400x284.jpg" />
+    <Content Include="img\downtown shopping\DownTown1-1-400x284.png" />
+    <Content Include="img\downtown shopping\DownTown2-1-400x284.png" />
+    <Content Include="img\downtown shopping\DownTown3-1-400x284.png" />
+    <Content Include="img\downtown shopping\DownTown3-1.png" />
+    <Content Include="img\downtown shopping\DownTown5-1-400x284.png" />
+    <Content Include="img\DowntownShoppingCenter.png" />
+    <Content Include="img\edmond cneter\20160801_100817-e1473174856332-1-1080x675.jpg" />
+    <Content Include="img\edmond cneter\20160801_100817-e1473174856332-1-400x284.jpg" />
+    <Content Include="img\edmond cneter\20160801_100939-e1473175066627-1-400x284.jpg" />
+    <Content Include="img\edmond cneter\20160801_101255-1024x768-1-400x284.jpg" />
+    <Content Include="img\EdmondCenter.jpg" />
+    <Content Include="img\GhaniabadiBusinessPark.jpeg" />
+    <Content Include="img\ghaniabadi\20161024_152514-e1485892126542-400x284.jpg" />
+    <Content Include="img\ghaniabadi\20161024_152718-e1485892009309-400x284.jpeg" />
+    <Content Include="img\ghaniabadi\20170403_155312-e1492185780860-1080x675.jpeg" />
+    <Content Include="img\ghaniabadi\20170403_155312-e1492185780860-400x284.jpeg" />
+    <Content Include="img\ghaniabadi\20170403_155341-e1492185373237-400x284.jpg" />
+    <Content Include="img\I-240Plaza.png" />
+    <Content Include="img\i-240\240-1-400x284.png" />
+    <Content Include="img\i-240\240-1-979x675.png" />
+    <Content Include="img\i-240\240-2-400x284.png" />
+    <Content Include="img\i-240\240-3-400x284.png" />
+    <Content Include="img\i-240\240-4-400x284.png" />
+    <Content Include="img\i-240\240-5-400x284.png" />
+    <Content Include="img\mason plaza\Mason-1-400x284.png" />
+    <Content Include="img\mason plaza\Mason-1.png" />
+    <Content Include="img\mason plaza\Mason-2-400x284.png" />
+    <Content Include="img\MasonPlaza.png" />
+    <Content Include="img\OrchardPlaza.jpg" />
+    <Content Include="img\orchard\OrchardPlaza1-1080x675.jpg" />
+    <Content Include="img\orchard\OrchardPlaza1-400x284.jpg" />
+    <Content Include="img\orchard\orchardplazadrawing-400x284.jpg" />
+    <Content Include="img\penn crossing\penncrossing1-150x150.jpeg" />
+    <Content Include="img\penn crossing\penncrossing2-150x150.jpeg" />
+    <Content Include="img\penn crossing\penncrossing3-150x150.jpeg" />
+    <Content Include="img\penn crossing\penncrossing4-150x150.jpeg" />
+    <Content Include="img\penn crossing\penncrossing4.jpg" />
+    <Content Include="img\penn crossing\penncrossing5-150x150.jpeg" />
+    <Content Include="img\penn crossing\penncrossing6-150x150.jpeg" />
+    <Content Include="img\penn crossing\penncrossing7-150x150.jpeg" />
+    <Content Include="img\PennCrossing.jpg" />
+    <Content Include="img\robinson office\RobinsonCrossingOfficeSuites1-1-1080x675.jpg" />
+    <Content Include="img\robinson office\RobinsonCrossingOfficeSuites1-1-400x284.jpg" />
+    <Content Include="img\robinson office\RobinsonCrossingOfficeSuites2-1-400x284.jpg" />
+    <Content Include="img\robinson office\RobinsonCrossingOfficeSuites6-1-400x284.jpg" />
+    <Content Include="img\RobinsonCrossing.jpeg" />
+    <Content Include="img\RobinsonCrossingOfficeSuites.jpg" />
+    <Content Include="img\robinson\20150331_110940-1024x576-1-400x284.jpg" />
+    <Content Include="img\robinson\20150518_135639-1-400x284.jpeg" />
+    <Content Include="img\robinson\New-Robinson-1-400x284.jpeg" />
+    <Content Include="img\robinson\New-Robinson-2-1-1080x675.jpeg" />
+    <Content Include="img\robinson\New-Robinson-2-1-400x284.jpeg" />
+    <Content Include="img\robinson\New-Robinson-4-1-400x284.jpeg" />
+    <Content Include="img\santa fe\SantaFe1-400x284.png" />
+    <Content Include="img\santa fe\SantaFe2-400x284.png" />
+    <Content Include="img\santa fe\SantaFe3-400x284.png" />
+    <Content Include="img\santa fe\SantaFe4-400x284.png" />
+    <Content Include="img\santa fe\SantaFe4.png" />
+    <Content Include="img\SantaFePlaza.png" />
+    <Content Include="img\ShawneeMarketplace.jpg" />
+    <Content Include="img\shawnee\DSCN0833-1080x675.jpg" />
+    <Content Include="img\shawnee\DSCN0833-400x284.jpg" />
+    <Content Include="img\shawnee\DSCN0834-400x284.jpg" />
+    <Content Include="img\shawnee\DSCN0835-400x284.jpg" />
+    <Content Include="img\Stonebriar.jpg" />
+    <Content Include="img\stonebriar\Stonebriar1-400x284.jpg" />
+    <Content Include="img\stonebriar\Stonebriar2-150x150.jpeg" />
+    <Content Include="img\stonebriar\Stonebriar2-400x284.jpg" />
+    <Content Include="img\stonebriar\Stonebriar2.jpg" />
+    <Content Include="img\stonebriar\Stonebriar3-150x150.jpeg" />
+    <Content Include="img\stonebriar\Stonebriar4-150x150.jpeg" />
+    <Content Include="img\town and country\TownCountry1.jpg" />
+    <Content Include="img\town and country\TownCountry2-400x284.jpg" />
+    <Content Include="img\Town&amp;Country.jpg" />
+    <Content Include="img\university plaza\20160801_101839-1024x768-400x284.jpg" />
+    <Content Include="img\university plaza\20160801_101911-1024x768-1024x675.jpg" />
+    <Content Include="img\university plaza\20160801_101911-1024x768-400x284.jpg" />
+    <Content Include="img\university plaza\20160801_102012-1024x768-400x284.jpg" />
+    <Content Include="img\university plaza\UniversityPlaza2.jpeg" />
+    <Content Include="img\UniversityPlaza.jpg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites11-1.jpg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites31-400x284.jpg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites41-150x150.jpeg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites51-150x150.jpeg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites61-1-400x284.jpg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites61-400x284.jpg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites61.jpg" />
+    <Content Include="img\virtual westminster exec\WestminsterExecutiveSuites71-150x150.jpeg" />
+    <Content Include="img\VirtualOfficesatWestminsterExecutiveSuites.jpg" />
+    <Content Include="img\westminster event\Westminster-Event-Center-1-150x150.jpeg" />
+    <Content Include="img\westminster event\Westminster-Event-Center-2-1080x675 - Copy.jpg" />
+    <Content Include="img\westminster event\Westminster-Event-Center-2-400x284 - Copy.jpg" />
+    <Content Include="img\westminster event\WestminsterEventCenter1-150x150.jpeg" />
+    <Content Include="img\westminster event\WestminsterEventCenter2-150x150.jpeg" />
+    <Content Include="img\westminster event\WestminsterEventCenter3-400x284.jpg" />
+    <Content Include="img\westminster event\WestminsterEventCenter5-150x150.jpeg" />
+    <Content Include="img\westminster event\WestminsterEventCenter6-150x150.jpeg" />
+    <Content Include="img\westminster exec\WestminsterExecutiveSuites11.jpg" />
+    <Content Include="img\westminster exec\WestminsterExecutiveSuites31-1-400x284.jpg" />
+    <Content Include="img\westminster exec\WestminsterExecutiveSuites4-150x150.jpeg" />
+    <Content Include="img\westminster exec\WestminsterExecutiveSuites6-150x150.jpeg" />
+    <Content Include="img\WestminsterEventCenter.jpg" />
+    <Content Include="img\WestminsterExecutiveSuites.jpg" />
+    <Content Include="img\WestminsterVillage.jpg" />
+    <Content Include="img\WestminsterVillageCarousel1.jpg" />
+    <Content Include="img\WestminsterVillageCarousel2.jpg" />
+    <Content Include="img\WestRenoIndustrialPark-Carousel1.jpeg" />
+    <Content Include="img\WestRenoIndustrialPark-Carousel2.jpeg" />
+    <Content Include="img\WestRenoIndustrialPark-Carousel3.jpeg" />
+    <Content Include="img\WestRenoIndustrialPark.jpeg" />
+    <Content Include="P-EdmondCenter.aspx" />
+    <Content Include="P-UniversityPlaza.aspx" />
+    <Content Include="P-DeckerCenter.aspx" />
+    <Content Include="P-OrchardPlaza.aspx" />
+    <Content Include="P-DowntownShoppingCenter.aspx" />
+    <Content Include="P-MasonPlaza.aspx" />
+    <Content Include="P-RobinsonCrossing.aspx" />
+    <Content Include="P-RobinsonCrossingOfficeSuites.aspx" />
+    <Content Include="P-BradyPlaza.aspx" />
+    <Content Include="P-CollonadeShoppingCenter.aspx" />
+    <Content Include="P-GhaniabadiBusinessPark.aspx" />
+    <Content Include="P-I-240Center.aspx" />
+    <Content Include="img\logo2.png" />
+    <Content Include="img\OutletShoppes2.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config" />
+    <Content Include="P-PennCrossing.aspx" />
+    <Content Include="P-SantaFePlaza.aspx" />
+    <Content Include="P-Stonebriar.aspx" />
+    <Content Include="P-TownAndCountry.aspx" />
+    <Content Include="P-VirtualOfficesWestminster.aspx" />
+    <Content Include="P-WestminsterEventCenter.aspx" />
+    <Content Include="P-WestminsterExecutiveSuites.aspx" />
+    <Content Include="P-WestminsterVillage.aspx" />
+    <Content Include="P-WestRenoIndustrialPark.aspx" />
+    <Content Include="P-ShawneeMarketPlace.aspx" />
+    <Content Include="PropertyStyle.css" />
+    <Content Include="scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="scripts\jquery-3.3.1.min.map" />
+    <Content Include="img\stonebriar\Stonebriar-Site-Plan-7-9-2014 %282%29.pdf" />
+    <Content Include="img\santa fe\Stonebriar-Site-Plan-7-9-2014 %282%29.pdf" />
+    <None Include="Properties\PublishProfiles\BradysPropertiesV22 - Web Deploy.pubxml" />
+    <Content Include="PropertyMaster.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="EdmondProperties.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\Logo.PNG" />
+    <Content Include="Main.css" />
+    <Content Include="MidwestCityProperties.aspx" />
+    <Content Include="OKCProperties.aspx" />
+    <Content Include="scripts\ai.0.22.19-build00125.js" />
+    <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="scripts\bootstrap.bundle.js" />
+    <Content Include="scripts\bootstrap.bundle.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\esm\popper-utils.js" />
+    <Content Include="scripts\esm\popper-utils.min.js" />
+    <Content Include="scripts\esm\popper.js" />
+    <Content Include="scripts\esm\popper.min.js" />
+    <Content Include="scripts\esm\popper.min.js.map" />
+    <Content Include="scripts\esm\popper.js.map" />
+    <Content Include="scripts\esm\popper-utils.min.js.map" />
+    <Content Include="scripts\esm\popper-utils.js.map" />
+    <Content Include="scripts\bootstrap.min.js.map" />
+    <Content Include="scripts\bootstrap.js.map" />
+    <Content Include="scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Main.Master" />
+    <Content Include="RegionalProperties.master" />
+    <Content Include="NormanProperties.aspx" />
+    <None Include="scripts\jquery-3.3.1-vsdoc.js" />
+    <Content Include="scripts\jquery-3.3.1.js" />
+    <Content Include="scripts\jquery-3.3.1.min.js" />
+    <Content Include="scripts\jquery-3.3.1.slim.js" />
+    <Content Include="scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="scripts\popper-utils.js" />
+    <Content Include="scripts\popper-utils.min.js" />
+    <Content Include="scripts\popper.js" />
+    <Content Include="scripts\popper.min.js" />
+    <Content Include="scripts\umd\popper-utils.js" />
+    <Content Include="scripts\umd\popper-utils.min.js" />
+    <Content Include="scripts\umd\popper.js" />
+    <Content Include="scripts\umd\popper.min.js" />
+    <Content Include="navScroller.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="scripts\umd\popper.min.js.map" />
+    <Content Include="scripts\umd\popper.js.map" />
+    <Content Include="scripts\umd\popper-utils.min.js.map" />
+    <Content Include="scripts\umd\popper-utils.js.map" />
+    <Content Include="scripts\README.md" />
+    <Content Include="scripts\popper.min.js.map" />
+    <Content Include="scripts\popper.js.map" />
+    <Content Include="scripts\popper-utils.min.js.map" />
+    <Content Include="scripts\popper-utils.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contact Us.aspx.designer.cs">
+      <DependentUpon>Contact Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-EdmondCenter.aspx.cs">
+      <DependentUpon>P-EdmondCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-EdmondCenter.aspx.designer.cs">
+      <DependentUpon>P-EdmondCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-UniversityPlaza.aspx.cs">
+      <DependentUpon>P-UniversityPlaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-UniversityPlaza.aspx.designer.cs">
+      <DependentUpon>P-UniversityPlaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-DeckerCenter.aspx.cs">
+      <DependentUpon>P-DeckerCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-DeckerCenter.aspx.designer.cs">
+      <DependentUpon>P-DeckerCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-OrchardPlaza.aspx.cs">
+      <DependentUpon>P-OrchardPlaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-OrchardPlaza.aspx.designer.cs">
+      <DependentUpon>P-OrchardPlaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-DowntownShoppingCenter.aspx.cs">
+      <DependentUpon>P-DowntownShoppingCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-DowntownShoppingCenter.aspx.designer.cs">
+      <DependentUpon>P-DowntownShoppingCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-MasonPlaza.aspx.cs">
+      <DependentUpon>P-MasonPlaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-MasonPlaza.aspx.designer.cs">
+      <DependentUpon>P-MasonPlaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-RobinsonCrossing.aspx.cs">
+      <DependentUpon>P-RobinsonCrossing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-RobinsonCrossing.aspx.designer.cs">
+      <DependentUpon>P-RobinsonCrossing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-RobinsonCrossingOfficeSuites.aspx.cs">
+      <DependentUpon>P-RobinsonCrossingOfficeSuites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-RobinsonCrossingOfficeSuites.aspx.designer.cs">
+      <DependentUpon>P-RobinsonCrossingOfficeSuites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-BradyPlaza.aspx.cs">
+      <DependentUpon>P-BradyPlaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-BradyPlaza.aspx.designer.cs">
+      <DependentUpon>P-BradyPlaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-CollonadeShoppingCenter.aspx.cs">
+      <DependentUpon>P-CollonadeShoppingCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-CollonadeShoppingCenter.aspx.designer.cs">
+      <DependentUpon>P-CollonadeShoppingCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EdmondProperties.aspx.cs">
+      <DependentUpon>EdmondProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EdmondProperties.aspx.designer.cs">
+      <DependentUpon>EdmondProperties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-GhaniabadiBusinessPark.aspx.cs">
+      <DependentUpon>P-GhaniabadiBusinessPark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-GhaniabadiBusinessPark.aspx.designer.cs">
+      <DependentUpon>P-GhaniabadiBusinessPark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-I-240Center.aspx.cs">
+      <DependentUpon>P-I-240Center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-I-240Center.aspx.designer.cs">
+      <DependentUpon>P-I-240Center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MidwestCityProperties.aspx.cs">
+      <DependentUpon>MidwestCityProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MidwestCityProperties.aspx.designer.cs">
+      <DependentUpon>MidwestCityProperties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OKCProperties.aspx.cs">
+      <DependentUpon>OKCProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OKCProperties.aspx.designer.cs">
+      <DependentUpon>OKCProperties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="P-PennCrossing.aspx.cs">
+      <DependentUpon>P-PennCrossing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-PennCrossing.aspx.designer.cs">
+      <DependentUpon>P-PennCrossing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-SantaFePlaza.aspx.cs">
+      <DependentUpon>P-SantaFePlaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-SantaFePlaza.aspx.designer.cs">
+      <DependentUpon>P-SantaFePlaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-Stonebriar.aspx.cs">
+      <DependentUpon>P-Stonebriar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-Stonebriar.aspx.designer.cs">
+      <DependentUpon>P-Stonebriar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-TownAndCountry.aspx.cs">
+      <DependentUpon>P-TownAndCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-TownAndCountry.aspx.designer.cs">
+      <DependentUpon>P-TownAndCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-VirtualOfficesWestminster.aspx.cs">
+      <DependentUpon>P-VirtualOfficesWestminster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-VirtualOfficesWestminster.aspx.designer.cs">
+      <DependentUpon>P-VirtualOfficesWestminster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-WestminsterEventCenter.aspx.cs">
+      <DependentUpon>P-WestminsterEventCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-WestminsterEventCenter.aspx.designer.cs">
+      <DependentUpon>P-WestminsterEventCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-WestminsterExecutiveSuites.aspx.cs">
+      <DependentUpon>P-WestminsterExecutiveSuites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-WestminsterExecutiveSuites.aspx.designer.cs">
+      <DependentUpon>P-WestminsterExecutiveSuites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-WestminsterVillage.aspx.cs">
+      <DependentUpon>P-WestminsterVillage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-WestminsterVillage.aspx.designer.cs">
+      <DependentUpon>P-WestminsterVillage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-WestRenoIndustrialPark.aspx.cs">
+      <DependentUpon>P-WestRenoIndustrialPark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-WestRenoIndustrialPark.aspx.designer.cs">
+      <DependentUpon>P-WestRenoIndustrialPark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="P-ShawneeMarketPlace.aspx.cs">
+      <DependentUpon>P-ShawneeMarketPlace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="P-ShawneeMarketPlace.aspx.designer.cs">
+      <DependentUpon>P-ShawneeMarketPlace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyMaster.master.cs">
+      <DependentUpon>PropertyMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyMaster.master.designer.cs">
+      <DependentUpon>PropertyMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="RegionalProperties.master.cs">
+      <DependentUpon>RegionalProperties.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegionalProperties.master.designer.cs">
+      <DependentUpon>RegionalProperties.master</DependentUpon>
+    </Compile>
+    <Compile Include="NormanProperties.aspx.cs">
+      <DependentUpon>NormanProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NormanProperties.aspx.designer.cs">
+      <DependentUpon>NormanProperties.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3867</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3867/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
