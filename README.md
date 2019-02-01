@@ -17,10 +17,8 @@ Backend development, Infrastructure: Jason Faulkner
 
 Current Work:
 
-Redesign Property Pages to reduce multiple pages to one template that is populated from the database
+Redesign Property Pages to reduce multiple pages to one template 
 
 Comment code to improve readabillity.
-
-Implement stored procedures to improve security
 
 Continue work on UI and Front-End Design
