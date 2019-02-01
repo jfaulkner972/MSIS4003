@@ -76,9 +76,6 @@
                             <li class="nav-item active">
                                 <a class="nav-link" href="P-ShawneeMarketPlace.aspx">Shawnee</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="Contact Us.aspx">Contact Us</a>
-                            </li>
                         </ul>
                     </div>
                 </nav>

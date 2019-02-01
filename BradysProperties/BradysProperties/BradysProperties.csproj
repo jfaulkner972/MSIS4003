@@ -105,7 +105,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contact Us.aspx" />
     <Content Include="img\brady plaza\bradyplaza11-1-400x284.jpg" />
     <Content Include="img\brady plaza\bradyplaza11-1.jpg" />
     <Content Include="img\brady plaza\bradyplaza31-1-400x284.jpg" />
@@ -348,9 +347,6 @@
     <Content Include="scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact Us.aspx.designer.cs">
-      <DependentUpon>Contact Us.aspx</DependentUpon>
-    </Compile>
     <Compile Include="P-EdmondCenter.aspx.cs">
       <DependentUpon>P-EdmondCenter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
