@@ -76,31 +76,31 @@ namespace BradysProperties {
         protected global::System.Web.UI.WebControls.Label genInfoText;
         
         /// <summary>
-        /// genNav1 control.
+        /// floorOne control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink genNav1;
+        protected global::System.Web.UI.WebControls.HyperLink floorOne;
         
         /// <summary>
-        /// genNav2 control.
+        /// floorTwo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink genNav2;
+        protected global::System.Web.UI.WebControls.HyperLink floorTwo;
         
         /// <summary>
-        /// genNav3 control.
+        /// floorThree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink genNav3;
+        protected global::System.Web.UI.WebControls.HyperLink floorThree;
         
         /// <summary>
         /// space control.

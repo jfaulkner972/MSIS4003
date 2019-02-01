@@ -9,7 +9,9 @@ namespace BradysProperties
 {
     public partial class PropertyMaster : System.Web.UI.MasterPage
     {
-        public static string a, b, c, d, e, f, g, h, i, j, k, l, m, ac, at, ay = "";
+        public static string mainPicture, location, description, generalInformation, generalInformationText, floorPlanOne, 
+            floorPlanOneText, floorPlanTwo, floorPlanTwoText, floorPlanThree, floorPlanThreeText, spaceInfoHeader, spaceInfomation, 
+            carouselImageOne, carouselImageTwo, carouselImageThree = "";
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -23,11 +25,11 @@ namespace BradysProperties
 
         public void updateDescription()
         {
-            descriptionID.Text = ac;
+            descriptionID.Text = description;
         }
-        public void changeInfo(string tw,
-            string gf,
-            string ca,
+        public void changeInfo(string cc,
+            string bb,
+            string aa,
             string z,
             string y,
             string x,
@@ -44,26 +46,27 @@ namespace BradysProperties
             )
         {
             int counter = 0;
-            at = tw;//Main Pic
-            ay = gf;//Location
-            ac = ca;//description
-            a = z;// geninfo
-            b = y;// geninfoText
-            c = x;// genNav1
-            d = w;// genNavText
-            e = v;// genNav2
-            f = u;// Nav2Text
-            g = t;// genNav3
-            h = s;// nav3Text
-            i = r;// spaceInfo
-            j = q;// spaceInfoText
-            k = p;// Carasel Pic1
-            l = o;// Carasel Pic2
-            m = n;// Carasel Pic3
-            Control[] labels = new Control[] { propertyMainPic, propertyLocation, descriptionID, genInfo, genInfoText, genNav1, genNav2, genNav3, spaceInfo, spaceInfoText };
-            string[] allVaris = new string[] { at, ay, ac, a, b, c, e, g, i, j };
-            string[] genVaris = new string[] { a, b, c, e, g };
-            string[] spaceVaris = new string[] { i, j };
+            mainPicture = cc;//Main Pic
+            location = bb;//Location
+            description = aa;//description
+            generalInformation = z;// geninfo
+            generalInformationText = y;// geninfoText
+            floorPlanOne = x;// genNav1
+            floorPlanOneText = w;// genNavText
+            floorPlanTwo = v;// genNav2
+            floorPlanTwoText = u;// Nav2Text
+            floorPlanThree = t;// genNav3
+            floorPlanThreeText = s;// nav3Text
+            spaceInfoHeader = r;// spaceInfo
+            spaceInfomation = q;// spaceInfoText
+            carouselImageOne = p;// Carasel Pic1
+            carouselImageTwo = o;// Carasel Pic2
+            carouselImageThree = n;// Carasel Pic3
+            Control[] labels = new Control[] { propertyMainPic, propertyLocation, descriptionID, genInfo, genInfoText, floorOne, floorTwo, floorThree, spaceInfo, spaceInfoText };
+            string[] allVaris = new string[] { mainPicture, location, description, generalInformation, generalInformationText, floorPlanOne,
+                floorPlanTwo, floorPlanThree, spaceInfoHeader, spaceInfomation };
+            string[] genVaris = new string[] { generalInformation, generalInformationText, floorPlanOne, floorPlanTwo, floorPlanThree };
+            string[] spaceVaris = new string[] { spaceInfoHeader, spaceInfomation };
             for (int ii = 0; ii < allVaris.Length; ii++)
             {
                 if (allVaris[ii] == "")
@@ -102,41 +105,41 @@ namespace BradysProperties
         //enter name of property, then info
         public void updateGeneralInfo()
         {
-            genInfo.Text = a;
-            genInfoText.Text = b;
+            genInfo.Text = generalInformation;
+            genInfoText.Text = generalInformationText;
         }
 
         public void updateFloorPlanPics()
         {
-            genNav1.NavigateUrl = c;
-            genNav1.Text = d;
-            genNav2.NavigateUrl = e;
-            genNav2.Text = f;
-            genNav3.NavigateUrl = g;
-            genNav3.Text = h;
+            floorOne.NavigateUrl = floorPlanOne;
+            floorOne.Text = floorPlanOneText;
+            floorTwo.NavigateUrl = floorPlanTwo;
+            floorTwo.Text = floorPlanTwoText;
+            floorThree.NavigateUrl = floorPlanThree;
+            floorThree.Text = floorPlanThreeText;
         }
 
         public void updateSpaceInfo()
         {
-            spaceInfo.Text = i;
-            spaceInfoText.Text = j;
+            spaceInfo.Text = spaceInfoHeader;
+            spaceInfoText.Text = spaceInfomation;
         }
 
         public void updateCarousel()
         {
-            cpic1.ImageUrl = k;
-            cpic2.ImageUrl = l;
-            cpic3.ImageUrl = m;
+            cpic1.ImageUrl = carouselImageOne;
+            cpic2.ImageUrl = carouselImageTwo;
+            cpic3.ImageUrl = carouselImageThree;
         }
 
         public void changeMainPic()
         {
-            propertyMainPic.ImageUrl = at;
+            propertyMainPic.ImageUrl = mainPicture;
         }
 
         public void changeLocation()
         {
-            propertyLocation.Text = ay;
+            propertyLocation.Text = location;
         }
     }
 }

@@ -9,9 +9,9 @@ namespace BradysProperties.PropertyListings.OKCProperties
 {
     public partial class WestminsterEventCenter : System.Web.UI.Page
     {
-        public static string m2 = "~/img/westminster event/Westminster-Event-Center-2-1080x675 - Copy.jpg";//ChangeMainPic
-        public static string m3 = "10601 S Western Ave, Oklahoma City, OK 73170";//changeLocation
-        public static string a1 = "The Westminster Event Center is the perfect location for any event from a formal wedding and reception, special events, banquettes, quinceaneras, bar mitzvahs, as well as a company conference. You and your guest can enjoy an evening or afternoon in a center that is close to hotels and is an easy commute to the Oklahoma City downtown area, without the parking problems of being in the center of downtown Oklahoma City.<Br>"
+        public static string mainPicture = "~/img/westminster event/Westminster-Event-Center-2-1080x675 - Copy.jpg";//ChangeMainPic
+        public static string location = "10601 S Western Ave, Oklahoma City, OK 73170";//changeLocation
+        public static string description = "The Westminster Event Center is the perfect location for any event from a formal wedding and reception, special events, banquettes, quinceaneras, bar mitzvahs, as well as a company conference. You and your guest can enjoy an evening or afternoon in a center that is close to hotels and is an easy commute to the Oklahoma City downtown area, without the parking problems of being in the center of downtown Oklahoma City.<Br>"
                                     + "We offer a preferred caterer’s list, any additional outside catering must be licensed and meet the guidelines of the Westminster Events Center. All beverage services will be arranged through the Westminster Event Center. We have several amenities that are available for your convenience including tables and chairs as well as a stage with all the lighting and cable lines for a sound system."
                                     + "Amenities included with the rental <br>"
                                     + "Audio Visual equipment: 4 large projection screens with 4 projectors<br>"
@@ -48,21 +48,21 @@ namespace BradysProperties.PropertyListings.OKCProperties
                                     + "A deposit of one third (1/3) of the rental fee as well as the $500.00 refundable security deposit and a signed contract are required to reserve your date, 30 days prior to your event another payment of one third (1/3) is required with the balance due 14 days prior to your event. <br>"
                                     + "Checks for the facility are to made payable to Westminster Events Center.<br>"
                                     + "Westminster Events Center is not liable or responsible for any items lost or damaged during the event.";//Property Description
-        public static string a = "<b>General Info: </b><br>";//General Info
-        public static string b = "Westminster Event Center <br>"
+        public static string generalInfoHeader ="<b>General Info: </b><br>";//General Info
+        public static string buildingInformation ="Westminster Event Center <br>"
                                 + "10601 South Western Ave, Oklahoma City, OK 73170 <br>"
                                 + "Phone: 405-703-4400 if no answer 405-732-8899 <br>"
                                 + "Fax: 405-703-4499 <br>"
                                 + "E-Mail: ali@bradysproperties.com or infobradysproperties@gmail.com <br>"
                                 + "  Please feel free to check us out on facebook.com or at www.westminstereventscenter.com <br>";//Buidling stuff square ft location building type etc
-        public static string c = "";//Redirect Path to Floor Plan 1
-        public static string d = "";// Text of Hyperlink ex Floor Plan 1
-        public static string e1 = "";// redirect for hyperlink 2
-        public static string f = "";// text of hyperlink 2
-        public static string g = "";//redirect for hyperlink3
-        public static string h = "";//text for hyperlink3
-        public static string i = "<b> Pricing Information </b>";//Spacing information Title
-        public static string j = "Prices for parties up to 349 people:<br>"
+        public static string pathToFloorPlanOne ="";//Redirect Path to Floor Plan 1
+        public static string floorPlanOneText = "";// Text of Hyperlink ex Floor Plan 1
+        public static string pathToFloorPlanTwo ="";// redirect for hyperlink 2
+        public static string floorPlanTwoText = "";// text of hyperlink 2
+        public static string pathToFloorPlanThree ="";//redirect for hyperlink3
+        public static string floorPlanThreeText = "";//text for hyperlink3
+        public static string spacingInformationHeader = "<b> Pricing Information </b>";//Spacing information Title
+        public static string spacingInformation = "Prices for parties up to 349 people:<br>"
                                 + "Sunday through Thursday:........$2000.00 <br>"
                                 + "Friday:.........................$2500.00 <br>"
                                 + "Saturday:.......................$3300.00 <br>"
@@ -76,16 +76,17 @@ namespace BradysProperties.PropertyListings.OKCProperties
                                 + "Saturday:.......................$4,500.00<br>"
                                 + "<br>"
             ;// information about available space goes here
-        public static string k = "~/img/westminster event/WestminsterEventCenter2-150x150.jpeg";//carousel img 1
-        public static string l = "~/img/westminster event/WestminsterEventCenter3-400x284.jpg";//carousel img 2
-        public static string m = "~/img/westminster event/Westminster-Event-Center-1-150x150.jpeg";//carousel img 3
+        public static string carouselImageOne = "~/img/westminster event/WestminsterEventCenter2-150x150.jpeg";//carousel img 1
+        public static string carouselImageTwo = "~/img/westminster event/WestminsterEventCenter3-400x284.jpg";//carousel img 2
+        public static string carouselImageThree = "~/img/westminster event/Westminster-Event-Center-1-150x150.jpeg";//carousel img 3
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Westminster Event Center";
             Master.changeTitle("Westminster Event Center");
-            Master.changeInfo(m2, m3, a1, a, b, c, d, e1, f, g, h, i, j, k, l, m);
+            Master.changeInfo(mainPicture, location, description, generalInfoHeader, buildingInformation, pathToFloorPlanOne, floorPlanOneText, pathToFloorPlanTwo,
+                floorPlanTwoText, pathToFloorPlanThree, floorPlanThreeText, spacingInformationHeader, spacingInformation, carouselImageOne, carouselImageTwo, carouselImageThree);
             Master.updateCarousel();
             Master.updateFloorPlanPics();
             Master.updateGeneralInfo();

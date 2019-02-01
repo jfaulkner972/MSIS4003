@@ -9,24 +9,24 @@ namespace BradysProperties
 {
     public partial class Collonade_Shopping_Center : System.Web.UI.Page
     {
-        public static string m2 = "~/img/collonade/Collonade3-1.jpg";//ChangeMainPic
-        public static string m3 = "N May Ave and Britton Rd, Oklahoma City, OK 73120";//changeLocation
-        public static string a1 = "Collonade Shopping Center, 9600 North May Ave (Just north of May and Britton) The Collonade Shopping Center features a strong mix of tenants in North Oklahoma City. The signalized intersection at N. May and Britton and the building’s “L-Shape” ensures high visibility and easy access to N. May. The Collonade is a 59,000 sq. ft. mixed use center with abundant parking and the center consists of a strong mix of retail stores, restaurants, and multi-tenant office suites on the second floor. Traffic light controlled entrance from May Avenue. Traffic count: 20,300 on N. May Avenue, 19,600 on Britton Road.";//Property Description
-        public static string a = "<b>General Info </b>";//General Info
-        public static string b = "Access: N. May Avenue or Britton Rd.<br>"
+        public static string mainPicture = "~/img/collonade/Collonade3-1.jpg";//ChangeMainPic
+        public static string location = "N May Ave and Britton Rd, Oklahoma City, OK 73120";//changeLocation
+        public static string description = "Collonade Shopping Center, 9600 North May Ave (Just north of May and Britton) The Collonade Shopping Center features a strong mix of tenants in North Oklahoma City. The signalized intersection at N. May and Britton and the building’s “L-Shape” ensures high visibility and easy access to N. May. The Collonade is a 59,000 sq. ft. mixed use center with abundant parking and the center consists of a strong mix of retail stores, restaurants, and multi-tenant office suites on the second floor. Traffic light controlled entrance from May Avenue. Traffic count: 20,300 on N. May Avenue, 19,600 on Britton Road.";//Property Description
+        public static string generalInfoHeader = "<b>General Info </b>";//General Info
+        public static string buildingInformation = "Access: N. May Avenue or Britton Rd.<br>"
             + "County: Oklahoma<br>"
             + "Type: Shopping Center<br>"
             + "Building SF: 59,000<br>"
             + "Site SF: 84,300<br>"
             + "Property Location: N May Ave and Britton Rd, Oklahoma City, OK 73120";//Buidling stuff square ft location building type etc
-        public static string c = "";//Redirect Path to Floor Plan 1
-        public static string d = "";// Text of Hyperlink ex Floor Plan 1
-        public static string e1 = "";// redirect for hyperlink 2
-        public static string f = "";// text of hyperlink 2
-        public static string g = "";//redirect for hyperlink3
-        public static string h = "";//text for hyperlink3
-        public static string i = "<b> Available Space </b>";//Spacing information Title
-        public static string j = "9606 N. May – Retail               2,290 sq. ft.<br>"
+        public static string pathToFloorPlanOne = "";//Redirect Path to Floor Plan 1
+        public static string floorPlanOneText = "";// Text of Hyperlink ex Floor Plan 1
+        public static string pathToFloorPlanTwo = "";// redirect for hyperlink 2
+        public static string floorPlanTwoText = "";// text of hyperlink 2
+        public static string pathToFloorPlanThree = "";//redirect for hyperlink3
+        public static string floorPlanThreeText = "";//text for hyperlink3
+        public static string spacingInformationHeader = "<b> Available Space </b>";//Spacing information Title
+        public static string spacingInformation = "9606 N. May – Retail               2,290 sq. ft.<br>"
             + "$12.00 per square foot plus Taxes, Insurance, CAM Charges<br>"
             + "9608 N.May – Retail               2,000 sq.ft.<br>"
             + "$12.00 per square foot plus Taxes, Insurance, CAM Charges<br>"
@@ -42,16 +42,17 @@ namespace BradysProperties
             + "$14.00 per square foot(Full Service)<br>"
             + "9636 N.May Suite 279 – Office            1,800 sq.ft.<br>"
             + "$14.00 per square foot(Full Service)";// information about available space goes here
-        public static string k = "~/img/collonade/Collonade2-1-400x284.jpg";//carousel img 1
-        public static string l = "~/img/collonade/attachment-3-400x284.jpg";//carousel img 2
-        public static string m = "~/img/collonade/20171215_084025-400x284.jpg";//carousel img 3
+        public static string carouselImageOne = "~/img/collonade/Collonade2-1-400x284.jpg";//carousel img 1
+        public static string carouselImageTwo = "~/img/collonade/attachment-3-400x284.jpg";//carousel img 2
+        public static string carouselImageThree = "~/img/collonade/20171215_084025-400x284.jpg";//carousel img 3
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Collonade Shopping Center";
             Master.changeTitle("Collonade Shopping Center");
-            Master.changeInfo(m2, m3, a1, a, b, c, d, e1, f, g, h, i, j, k, l, m);
+            Master.changeInfo(mainPicture, location, description, generalInfoHeader, buildingInformation, pathToFloorPlanOne, floorPlanOneText, pathToFloorPlanTwo,
+                floorPlanTwoText, pathToFloorPlanThree, floorPlanThreeText, spacingInformationHeader, spacingInformation, carouselImageOne, carouselImageTwo, carouselImageThree);
             Master.updateCarousel();
             Master.updateFloorPlanPics();
             Master.updateGeneralInfo();
