@@ -13,6 +13,15 @@ namespace BradysProperties {
     public partial class Home {
         
         /// <summary>
+        /// aboutUs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label aboutUs;
+        
+        /// <summary>
         /// img1 control.
         /// </summary>
         /// <remarks>
@@ -56,15 +65,6 @@ namespace BradysProperties {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label img5;
-        
-        /// <summary>
-        /// aboutUs control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label aboutUs;
         
         /// <summary>
         /// location1 control.

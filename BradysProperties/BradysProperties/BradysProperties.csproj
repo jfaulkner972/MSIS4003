@@ -272,6 +272,7 @@
     <Content Include="img\santa fe\Stonebriar-Site-Plan-7-9-2014 %282%29.pdf" />
     <None Include="Properties\PublishProfiles\BradysPropertiesV22 - Web Deploy.pubxml" />
     <Content Include="PropertyMaster.master" />
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -286,12 +287,9 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="EdmondProperties.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="img\Logo.PNG" />
     <Content Include="Main.css" />
-    <Content Include="MidwestCityProperties.aspx" />
-    <Content Include="OKCProperties.aspx" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\bootstrap.bundle.js" />
@@ -317,8 +315,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Main.Master" />
-    <Content Include="RegionalProperties.master" />
-    <Content Include="NormanProperties.aspx" />
     <None Include="scripts\jquery-3.3.1-vsdoc.js" />
     <Content Include="scripts\jquery-3.3.1.js" />
     <Content Include="scripts\jquery-3.3.1.min.js" />
@@ -333,9 +329,6 @@
     <Content Include="scripts\umd\popper.js" />
     <Content Include="scripts\umd\popper.min.js" />
     <Content Include="navScroller.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="scripts\umd\popper.min.js.map" />
     <Content Include="scripts\umd\popper.js.map" />
     <Content Include="scripts\umd\popper-utils.min.js.map" />
@@ -417,13 +410,6 @@
     <Compile Include="P-CollonadeShoppingCenter.aspx.designer.cs">
       <DependentUpon>P-CollonadeShoppingCenter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EdmondProperties.aspx.cs">
-      <DependentUpon>EdmondProperties.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EdmondProperties.aspx.designer.cs">
-      <DependentUpon>EdmondProperties.aspx</DependentUpon>
-    </Compile>
     <Compile Include="P-GhaniabadiBusinessPark.aspx.cs">
       <DependentUpon>P-GhaniabadiBusinessPark.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -451,20 +437,6 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
-    <Compile Include="MidwestCityProperties.aspx.cs">
-      <DependentUpon>MidwestCityProperties.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MidwestCityProperties.aspx.designer.cs">
-      <DependentUpon>MidwestCityProperties.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OKCProperties.aspx.cs">
-      <DependentUpon>OKCProperties.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OKCProperties.aspx.designer.cs">
-      <DependentUpon>OKCProperties.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="P-PennCrossing.aspx.cs">
@@ -543,20 +515,6 @@
     </Compile>
     <Compile Include="PropertyMaster.master.designer.cs">
       <DependentUpon>PropertyMaster.master</DependentUpon>
-    </Compile>
-    <Compile Include="RegionalProperties.master.cs">
-      <DependentUpon>RegionalProperties.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegionalProperties.master.designer.cs">
-      <DependentUpon>RegionalProperties.master</DependentUpon>
-    </Compile>
-    <Compile Include="NormanProperties.aspx.cs">
-      <DependentUpon>NormanProperties.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NormanProperties.aspx.designer.cs">
-      <DependentUpon>NormanProperties.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

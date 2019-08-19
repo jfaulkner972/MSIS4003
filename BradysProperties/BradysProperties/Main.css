@@ -1,20 +1,9 @@
-﻿*{
-    padding: 4px;
-    margin: 4px;
-    box-sizing: border-box;
-}
-
-body {
+﻿body {
     background: lightgrey;
 }
 
-
-
 nav {
-
     text-transform: uppercase;
-    
-
 }
 
 nav a {
@@ -24,24 +13,13 @@ nav a {
 nav a:hover{
     background: goldenrod;
     text-decoration: none;
-
 }
 
 .logo {
     float: left;
     height: 70px;
     margin-left: 10px; 
-
 }
-
-nav ul {
-
-}
-
-nav li {
-
-}
-
 
 .bg {
     display: block;
@@ -52,7 +30,6 @@ nav li {
 
 .makeVisible {
     color: black;
-    
 }
 
 .fullwidth{
@@ -117,4 +94,18 @@ button.bg-dark:focus {
     text-align:center;
     font-size:1.5em;
     font-weight:bold;
+}
+
+.title-space {
+    margin-top:10px;
+}
+
+.card-header {
+    background-color: #403430;
+    color:white;
+    text-align:center
+}
+
+.card-body {
+    background-color:wheat;
 }

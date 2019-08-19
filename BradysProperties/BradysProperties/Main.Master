@@ -21,13 +21,13 @@
             <div class="navigation">
                 <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-darky">
                     <a href="Home.aspx" class="logo1">
-                        <img src="img/logo2.png" alt="logo" class="logo" />
+                        <h2 style="color: #fff;margin-right: 10px;">Property</h2>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarsExample06">
+                    <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="Home.aspx">Home<span class="sr-only">(current)</span></a>
@@ -82,20 +82,12 @@
             </div>
             <br />
             <br />
-            <div class="centerText">
+            <div class="centerText" style="margin-top:75px">
                 <asp:Label ID="pageHeader" runat="server" Text="Label"></asp:Label>
                 <br />
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-
-            <div id="footer" class=" form-row bg-darky">
-                <img src="img/logo2.png" alt="logo" class="logo" />
-                <h3 class="inLine ">
-                    <a href="Home.aspx" class="conor">Home</a>
-                    <a href="Contact Us.aspx" class="conor">Contact Us</a>
-                </h3>
-            </div>
         </main>
     </form>
 </body>

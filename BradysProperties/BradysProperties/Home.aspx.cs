@@ -11,15 +11,15 @@ namespace BradysProperties
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Page.Title = "Brady's Properties";
-            Master.changeTitle("Welcome to Brady's Properties");
+            Page.Title = "Property";
+            Master.changeTitle("Welcome to Properties");
             AboutUs();
             imgCaptions();
         }
 
         private void AboutUs()
         {
-            aboutUs.Text = "At Brady’s Properties, we know that your time is valuable. That is why we dedicate ourselves to handling all aspects of your commercial real estate leasing needs. We want to be sure that you have time for the other things in your life. To find out what we can do for you, please contact us right away!";
+            aboutUs.Text = "At Properties, we know that your time is valuable. That is why we dedicate ourselves to handling all aspects of your commercial real estate leasing needs. We want to be sure that you have time for the other things in your life. To find out what we can do for you, please contact us right away!";
         }
 
         private void imgCaptions()
