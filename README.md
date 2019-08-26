@@ -14,11 +14,3 @@ Navigation, Responsive Design: Jake Pulliam
 Content, Database Design: Michelle Meltke
 
 Backend development, Infrastructure: Jason Faulkner
-
-Current Work:
-
-Redesign Property Pages to reduce multiple pages to one template 
-
-Comment code to improve readabillity.
-
-Continue work on UI and Front-End Design
